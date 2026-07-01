@@ -1,3 +1,3 @@
 // Paste your Google Apps Script Web App URL here after deploying it.
 // See APPS_SCRIPT.md for the deployment steps.
-export const SUBMIT_URL = 'PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE';
+export const SUBMIT_URL = https://script.google.com/macros/s/AKfycbzZH6LxSUppzAccIx2DGK0QsiBqjzj9FtJEEK2RPH4tAEmCon-0BqPZ3_mqNzwIamQiRA/exec;
