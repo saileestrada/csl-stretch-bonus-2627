@@ -98,11 +98,13 @@ export default function App() {
           ))}
         </div>
 
-        <div className="note">
+      <div className="note">
           <span className="note-label">Extra bonus potential</span>
-          <span className="note-text">
-            Age-based bonuses stack on top of whichever level you pick above &mdash; Under 50: <strong>$1,250</strong> &middot; Age 65&ndash;69: <strong>$250</strong>.
-          </span>
+          <span className="note-text">Age-based bonuses stack on top of whichever level you pick above.</span>
+          <ul className="note-list">
+            <li>Under 50: <strong>$1,250</strong></li>
+            <li>Age 65&ndash;69: <strong>$250</strong></li>
+          </ul>
         </div>
 
         {status === 'error' && (
