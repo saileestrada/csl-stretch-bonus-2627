@@ -177,6 +177,24 @@ h1 {
   color: var(--yellow);
 }
 
+.note-list {
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.note-list li {
+  font-size: 13px;
+  color: var(--rink-gray);
+}
+
+.note-list li strong {
+  color: var(--yellow);
+}
+
 .submit {
   width: 100%;
   background: var(--yellow);
