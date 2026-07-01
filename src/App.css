@@ -148,6 +148,35 @@ h1 {
   color: var(--yellow);
 }
 
+.note {
+  border: 1px solid var(--steel-line);
+  border-left: 3px solid var(--muted-gold);
+  border-radius: 4px;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.note-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted-gold);
+  font-weight: 700;
+}
+
+.note-text {
+  font-size: 13px;
+  color: var(--rink-gray);
+  line-height: 1.5;
+}
+
+.note-text strong {
+  color: var(--yellow);
+}
+
 .submit {
   width: 100%;
   background: var(--yellow);
