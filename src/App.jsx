@@ -47,14 +47,18 @@ export default function App() {
       bonus: chosen.bonus,
       submittedAt: new Date().toISOString(),
     };
-    try {
-      await fetch(SUBMIT_URL, {
+   try {
+      const res = await fetch(SUBMIT_URL, {
         method: 'POST',
-        mode: 'no-cors',
         headers: { 'Content-Type': 'text/plain' },
         body: JSON.stringify(payload),
       });
-      setStatus('done');
+      const result = await res.json();
+      if (result.status === 'ok') {
+        setStatus('done');
+      } else {
+        setStatus('error');
+      }
     } catch (err) {
       setStatus('error');
     }
