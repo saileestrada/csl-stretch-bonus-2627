@@ -148,15 +148,25 @@ h1 {
   color: var(--yellow);
 }
 
+.note-intro {
+  font-size: 13px;
+  color: var(--ice-blue-gray);
+  margin: 0 0 10px;
+}
+
 .note {
   border: 1px solid var(--steel-line);
   border-left: 3px solid var(--muted-gold);
   border-radius: 4px;
   padding: 12px 14px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+
+.note:last-of-type {
+  margin-bottom: 20px;
 }
 
 .note-label {
