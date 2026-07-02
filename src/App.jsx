@@ -98,12 +98,23 @@ export default function App() {
           ))}
         </div>
 
-      <div className="note">
-          <span className="note-label">Extra bonus potential</span>
-          <span className="note-text">Age-based bonuses stack on top of whichever level you pick above.</span>
+        <p className="note-intro">Extra bonus potential, stacks on top of whichever level you pick above.</p>
+
+        <div className="note">
+          <span className="note-label">Age Range Bonus</span>
           <ul className="note-list">
-            <li>Under 50: <strong>$1,250</strong></li>
-            <li>Age 65&ndash;69: <strong>$250</strong></li>
+            <li>60&ndash;64: <strong>$1,000</strong></li>
+            <li>65&ndash;69: <strong>$750</strong></li>
+            <li>70&ndash;75: <strong>$500</strong></li>
+          </ul>
+        </div>
+
+        <div className="note">
+          <span className="note-label">Multi-Pay Bonus</span>
+          <ul className="note-list">
+            <li>50% multi-pay: <strong>$750</strong></li>
+            <li>60% multi-pay: <strong>$1,000</strong></li>
+            <li>70% multi-pay: <strong>$1,500</strong></li>
           </ul>
         </div>
 
@@ -141,4 +152,3 @@ export default function App() {
     </div>
   );
 }
-
